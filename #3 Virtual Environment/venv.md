@@ -82,4 +82,4 @@ This guide provides a straightforward approach to creating and managing a Python
   pip install -r requirements.txt
   ```
 
-Feel Free to visit [NetHyTech](https:/www.youtube.com/@nethytech)
+Feel Free to visit [NetHyTech](https://www.youtube.com/@nethytech)
