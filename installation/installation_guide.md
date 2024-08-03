@@ -57,4 +57,4 @@ Before you begin, ensure you have the following:
 
 ---
 
-This guide should help you get started with Python and VSCode. If you have any further questions or need assistance, feel free to ask.
+This guide should help you get started with Python and VSCode. If you have any further questions or need assistance, feel free to join youtube channel @NetHYTech
