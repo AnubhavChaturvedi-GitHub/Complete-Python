@@ -66,6 +66,13 @@ This guide provides a straightforward approach to creating and managing a Python
    deactivate
    ```
 
+## Second Way to do
+- open vs code
+- press ctrl + shift + p
+- search python: Select interpreter
+- click on create virtul environment
+- select python version
+  
 ## Additional Information
 
 - To **remove** the virtual environment, simply delete the `env` directory.
