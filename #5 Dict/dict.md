@@ -1,3 +1,4 @@
+
 # Python Dictionary Operations
 
 Welcome to the Python Dictionary Operations guide. This document will help you understand and implement various operations that can be performed on dictionaries in Python.
@@ -24,6 +25,13 @@ my_dict = {
     'age': 25,
     'city': 'New York'
 }
+print(my_dict)
+```
+
+**Output:**
+
+```python
+{'name': 'John', 'age': 25, 'city': 'New York'}
 ```
 
 ## Creating a Dictionary
@@ -40,6 +48,14 @@ my_dict = {
 
 # Using dict() function
 my_dict = dict(name='John', age=25, city='New York')
+
+print(my_dict)
+```
+
+**Output:**
+
+```python
+{'name': 'John', 'age': 25, 'city': 'New York'}
 ```
 
 ## Accessing Dictionary Items
@@ -49,9 +65,18 @@ Access dictionary items by referring to their keys.
 ```python
 # Accessing a single value
 name = my_dict['name']
+print(name)
 
 # Using get() method
 name = my_dict.get('name')
+print(name)
+```
+
+**Output:**
+
+```python
+John
+John
 ```
 
 ## Adding and Updating Dictionary Items
@@ -61,9 +86,18 @@ You can add new items or update existing items using assignment.
 ```python
 # Adding a new key-value pair
 my_dict['email'] = 'john@example.com'
+print(my_dict)
 
 # Updating an existing key-value pair
 my_dict['age'] = 26
+print(my_dict)
+```
+
+**Output:**
+
+```python
+{'name': 'John', 'age': 25, 'city': 'New York', 'email': 'john@example.com'}
+{'name': 'John', 'age': 26, 'city': 'New York', 'email': 'john@example.com'}
 ```
 
 ## Removing Dictionary Items
@@ -73,12 +107,27 @@ You can remove items using the `del` statement, `pop()` method, or `popitem()` m
 ```python
 # Using del statement
 del my_dict['age']
+print(my_dict)
 
 # Using pop() method
 email = my_dict.pop('email')
+print(email)
+print(my_dict)
 
 # Using popitem() method (removes the last inserted item)
 last_item = my_dict.popitem()
+print(last_item)
+print(my_dict)
+```
+
+**Output:**
+
+```python
+{'name': 'John', 'city': 'New York', 'email': 'john@example.com'}
+john@example.com
+{'name': 'John', 'city': 'New York'}
+('city', 'New York')
+{'name': 'John'}
 ```
 
 ## Dictionary Methods
@@ -86,23 +135,43 @@ last_item = my_dict.popitem()
 Python provides several built-in methods for dictionary operations.
 
 ```python
+my_dict = {'name': 'John', 'age': 26, 'city': 'New York'}
+
 # Getting all keys
 keys = my_dict.keys()
+print(keys)
 
 # Getting all values
 values = my_dict.values()
+print(values)
 
 # Getting all key-value pairs
 items = my_dict.items()
+print(items)
 
 # Clearing all items
 my_dict.clear()
+print(my_dict)
 
 # Copying a dictionary
+my_dict = {'name': 'John', 'age': 26, 'city': 'New York'}
 new_dict = my_dict.copy()
+print(new_dict)
 
 # Creating a dictionary with default values
 default_dict = dict.fromkeys(['name', 'age', 'city'], 'unknown')
+print(default_dict)
+```
+
+**Output:**
+
+```python
+dict_keys(['name', 'age', 'city'])
+dict_values(['John', 26, 'New York'])
+dict_items([('name', 'John'), ('age', 26), ('city', 'New York')])
+{}
+{'name': 'John', 'age': 26, 'city': 'New York'}
+{'name': 'unknown', 'age': 'unknown', 'city': 'unknown'}
 ```
 
 ## Iterating Through a Dictionary
@@ -110,6 +179,8 @@ default_dict = dict.fromkeys(['name', 'age', 'city'], 'unknown')
 You can iterate through keys, values, or key-value pairs in a dictionary.
 
 ```python
+my_dict = {'name': 'John', 'age': 26, 'city': 'New York'}
+
 # Iterating through keys
 for key in my_dict:
     print(key)
@@ -121,6 +192,20 @@ for value in my_dict.values():
 # Iterating through key-value pairs
 for key, value in my_dict.items():
     print(f'{key}: {value}')
+```
+
+**Output:**
+
+```python
+name
+age
+city
+John
+26
+New York
+name: John
+age: 26
+city: New York
 ```
 
 ## Nested Dictionaries
@@ -135,6 +220,13 @@ nested_dict = {
 
 # Accessing nested dictionary items
 name = nested_dict['person1']['name']
+print(name)
+```
+
+**Output:**
+
+```python
+John
 ```
 
 ## Dictionary Comprehensions
@@ -144,6 +236,13 @@ Dictionary comprehensions provide a concise way to create dictionaries.
 ```python
 # Creating a dictionary with squares of numbers
 squares = {x: x*x for x in range(6)}
+print(squares)
+```
+
+**Output:**
+
+```python
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 ```
 
 ## Conclusion
